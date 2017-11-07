@@ -177,7 +177,7 @@ describe('check cli', function () {
 
     it('should exit with 0 on output', function (callback) {
         this.timeout(10000);
-        testCli(['coffee.coffee'], ['--exit-nicely'], null, function (exitCode, log) {
+        testCli(['coffee.coffee'], ['--exit-nicely'], function (exitCode, log) {
             should.exist(exitCode);
             should.exist(log);
             exitCode.should.equal(0);
