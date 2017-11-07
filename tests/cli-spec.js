@@ -184,8 +184,8 @@ describe('check cli', function () {
             log.should.eql([
                 '',
                 'tests/fixtures/coffee.coffee',
-                '  line 1   TODO   Do something',
-                '  line 3   FIXME  Fix something',
+                '  line 1  TODO   Do something',
+                '  line 3  FIXME  Fix something',
                 '',
                 ' ✖ 2 todos/fixmes found',
                 ''
